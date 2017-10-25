@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="servicios/contactos.css" type="text/css">
-  <link rel="icon" href=""> </head>
+  <link rel="icon" href="">
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+</head>
 
 <body>
   <nav class="navbar navbar-expand-md bg-primary navbar-dark">
@@ -63,11 +65,38 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <li class="nav-item">
-            <a class="navbar-brand" href="https://www.google.com.mx/maps/place/2da.+de+Texcoco,+Luis+Donaldo+Colosio,+55010+Ecatepec+de+Morelos,+M%C3%A9x./@19.6500481,-99.3446637,10z/data=!4m5!3m4!1s0x85d1f3b63b210e15:0x857f779af1156627!8m2!3d19.6500431!4d-99.0645123"
-              target="_blank">
-              <img class="d-block img-fluid my-3" src="imagenIncio/mapa.jpg"> </a>
-          </li>
+          <style>
+            html,
+            body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+
+            #map {
+              height: 100%;
+            }
+          </style>
+          <script>
+            function initialize() {
+              var myLatLng = {lat: 19.4236295, lng: -99.16330519999997};
+              var mapOptions = {
+                zoom:11,
+                center:myLatLng
+              }
+            
+              var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            
+              var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                
+              });
+            }
+            
+            google.maps.event.addDomListener(window, 'load', initialize);
+          </script>
+          <div id="map"></div>
         </div>
         <div class="col-md-6">
           <h1>Contáctanos</h1>
