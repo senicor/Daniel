@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="servicios/certificacion.css" type="text/css"> </head>
+  <link rel="stylesheet" href="css/certificacion.css"> </head>
 
 <body>
   <nav class="navbar navbar-expand-md bg-primary navbar-dark">
@@ -30,32 +30,134 @@
       </div>
     </div>
   </nav>
+  <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    .navbar-nav>li {
+      float: left;
+    }
+
+    .navbar-nav li a {
+      text-decoration: none;
+      padding: 10px 12px;
+      display: block;
+    }
+
+    .navbar-nav li a:hover {
+      background-color: #55be98;
+    }
+
+    .navbar-nav li ul {
+      background-color: #55be98;
+      display: none;
+      position: absolute;
+      min-width: 140px;
+    }
+
+    .navbar-nav li:hover>ul {
+      display: block;
+    }
+
+    .navbar-nav li ul li {
+      position: relative;
+    }
+
+    .navbar-nav li ul li ul {
+      right: -140px;
+      top: 0px;
+    }
+  </style>
   <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
     <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="certificacion.html">Certificacion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="galeria.html">Galeria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactos.html">Contactos</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="navbar-nav nav-link" href="inicio/somos.html">Somos</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="navbar-nav nav-link" href="servicios.html">Inicio 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
         </ul>
-        <form class="form-inline m-0">
-          <input class="form-control mr-2" type="text" placeholder="Buscar">
-          <button class="btn btn-primary" type="submit"><i class="fa d-inline fa-lg fa-search"></i></button>
-        </form>
-      </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="navbar-nav nav-link" href="servicios/alcance.html">Alcances</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="navbar-nav nav-link" href="servicios.html">Servicios 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="certificacion.html">Certificacion</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="navbar-nav nav-link" href="servicios.html">Certificacion 2</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="navbar-nav nav-link" href="servicios.html">Certificacion 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="navbar-nav nav-link" href="servicios.html">Galeria 2</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="navbar-nav nav-link" href="servicios.html">Galera 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link btn-secondary" href="contactos.html">Contactos</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="navbar-nav nav-link" href="servicios.html">Contacto 2</a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="navbar-nav nav-link" href="servicios.html">Contacto 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+      <form class="form-inline m-0">
+        <input class="form-control mr-2" type="text" placeholder="Buscar">
+        <button class="btn btn-primary" type="submit"><i class="fa d-inline fa-lg fa-search"></i></button>
+      </form>
     </div>
   </nav>
   <div class="py-5 text-center bg-light">
