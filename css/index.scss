@@ -5,7 +5,7 @@ $theme-colors: (
   primary: #004EA3,
   secondary: #52be80,
   success: #28a745,
-  info: #007bff,
+  info: #00fbff,
   warning: #ffc107,
   danger: #dc3545,
   light: #f8f9fa,
@@ -29,9 +29,7 @@ $enable-print-styles:       true !default;
 // Theme settings.
 
 $body-bg: white;
-$body-color: #007;
-
-
+$body-color: #292b2c;
 $body-color-inverse: invert($body-color) !default;
 $link-color: #007bff;
 
