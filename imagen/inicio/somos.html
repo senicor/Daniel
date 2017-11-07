@@ -2,16 +2,15 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="logo.ico">
+  <link rel="shortcut icon" href="../../logo.ico">
   <title> Torual Qfb</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="css/estilo.css">
-  <script src="https://maps.googleapis.com/maps/api/js?v=AIzaSyDvsVs5ZiXozWYmGJoU8DR7zKtyf9jstqQ=true"></script>
+  <link rel="stylesheet" href="../../css/estilo.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="js/jquery-css-transform.js" type="text/javascript"></script>
-  <script src="js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
+  <script src="../../js/jquery-css-transform.js" type="text/javascript"></script>
+  <script src="../../js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
   <style>
     {
       margin: 0;
@@ -50,7 +49,7 @@
           <a class="navbar-brand" href="#"> </a>
           <div align="fa d-inline">
             <a class="navbar-brand" href="#">
-              <img src="imagen/logo.jpg"><b class="text-center">  Torual Qfb</b></a>
+              <img src="../logo.jpg"><b class="text-center">  Torual Qfb</b></a>
           </div> <i class="fa d-inline fa-lg "></i><b class="text-center"></b>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
             aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -67,22 +66,20 @@
           </div>
         </div>
       </nav>
-      <!-- menu     <div class="container md-6 ">
- -->
       <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
         <div class="item">
           <a class="link icon_home"></a>
           <div class="item_content">
-            <a class="nav- text-primary" href="index.html">INICIO </a>
+            <a class="nav- text-primary" href="../../index.html">INICIO </a>
             <p>
-              <a class="nav- " href="inicio/somos.html">*Somos</a>
+              <a class="nav- " href="../../imagen/inicio/somos.html">*Somos</a>
             </p>
           </div>
         </div>
         <div class="item">
           <a class="link icon_help"></a>
           <div class="item_content">
-            <a class="nav- text-primary" href="servicios.html">SERVICIOS</a>
+            <a class="nav- text-primary" href="../../servicios.html">SERVICIOS</a>
             <p>
               <a class="nav- " href="#">*Supervisores</a>
               <a class="nav- " href="#">*Jefes</a>
@@ -94,7 +91,7 @@
         <div class="item">
           <a class="link icon_find"></a>
           <div class="item_content">
-            <a class="nav- text-primary" href="cursos.html">Cursos</a>
+            <a class="nav- text-primary" href="../../cursos.html">Cursos</a>
             <p>
               <a class="nav-" href="#">*Primeros auxilios</a>
               <a class="nav-" href="#">*Evacuacion</a>
@@ -105,13 +102,13 @@
         <div class="item">
           <a class="link icon_photos"></a>
           <div class="item_content">
-            <a class="nav- text-primary" href="galeria.html">GALERIA</a>
+            <a class="nav- text-primary" href="../../galeria.html">GALERIA</a>
           </div>
         </div>
         <div class="item">
           <a class="link icon_mail"></a>
           <div class="item_content">
-            <a class="nav- text-primary" href="contactos.html">CONTACTOS</a>
+            <a class="nav- text-primary" href="../../contactos.html">CONTACTOS</a>
           </div>
         </div>
       </nav>
@@ -156,59 +153,40 @@
                 }
       </script>
     </header>
-    <!--cabecera-->
     <div>
       <!-- cuerpo -->
-      <div class="py-5 bg-primary text-white" style="background-image: url(&quot;imagen/inicio/fondo.jpg&quot;);">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <style>
-                html,
-                body {
-                  height: 100%;
-                  margin: 0;
-                  padding: 0;
-                }
-
-                #map {
-                  height: 100%;
-                }
-              </style>
-              <script>
-                function initialize() {
-                  var myLatLng = {lat: 19.6500431, lng: -99.0645123};
-                  var mapOptions = {
-                    zoom:11,
-                    center:myLatLng
-                  }
-                
-                  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-                
-                  var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    
-                  });
-                }
-                
-                google.maps.event.addDomListener(window, 'load', initialize);
-              </script>
-              <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvsVs5ZiXozWYmGJoU8DR7zKtyf9jstqQ&amp;callback=initMap">
-              </script>
-              <div id="map"></div>
+      <div class="py-5 text-center opaque-overlay gradient-overlay " style="background-image: url(&quot;../inicio/fondo.jpg&quot;);">
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="../inicio/somos.jpg"> </div>
+          <div class="col-md-7">
+            <h2 class="text-#004 pt-3">Quienes somos</h2>
+            <br>
+            <h4 class="left text-white">Somos un grupo de jóvenes certificados entusiastas que ante la necesidad de contar con un equipo comprometidos con la clase trabajadora de la construcción unimos nuestra capacidad, experiencia y conocimientos de medio ambiente, seguridad e
+              higiene y protección civil, decidimos darnos a la tarea de velar por la seguridad, integridad y salud tanto física como mental del trabajador bajo las Normas y estatutos de la STPS. </h4>
+            <br> </div>
+        </div>
+        <div class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-center display-3 text-white">Vision</h1>
+                <br>
+                <h4 class="text-white">Consolidarnos como una empresa que ofrece servicios de excelente calidad, contribuyendo entre otros objetivos a un ambiente sano y productivo dentro de las actividades empresariales. Proporcionando capital humano asesoría en Seguridad
+                  e higiene, Protección Civil y capacitación de Personal. </h4>
+                <br> </div>
             </div>
-            <div class="col-md-6">
-              <h1>Contáctanos</h1>
-              <p>Nos encantaria saber de usted</p>
-              <form>
-                <div class="form-group"> <label for="InputName">Nombre</label>
-                  <input type="text" class="form-control" id="InputName" placeholder="Nombre"> </div>
-                <div class="form-group"> <label for="InputEmail1">Correo email</label>
-                  <input type="email" class="form-control" id="InputEmail1" placeholder="Correo email"> </div>
-                <div class="form-group"> <label for="Textarea">Comentario</label> <textarea class="form-control" id="Textarea" rows="3" placeholder="Escribir"></textarea> </div>
-                <button type="submit" class="btn btn-secondary">Enviar</button>
-              </form>
+          </div>
+        </div>
+        <div class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-center display-3 text-white">Mision</h1>
+                <br>
+                <h4 class="text-white">Prevenir los accidentes fatales, y los riesgos inherentes por el manejo de equipos y herramientas, con los cual aseguramos soluciones prontas y efectivas a las necesidades de nuestros clientes para que con ellas exista mayor producción
+                  en su gente y terminen sus proyectos en tiempo y forma. </h4>
+              </div>
             </div>
           </div>
         </div>
@@ -220,12 +198,12 @@
       <div class="opaque-overlay gradient-overlay">
         <a class="btn btn-lg mx-1"></a>
       </div>
-      <div class="text-white opaque-overlay gradient-overlay" style="background-image: url(&quot;imagen/casco.jpg&quot;);">
+      <div class="text-white opaque-overlay gradient-overlay" style="background-image: url(&quot;../casco.jpg&quot;);">
         <div class="container">
           <div class="row">
             <div class="p-4 col-md-5">
               <a class="navbar-brand">
-                <img src="imagen/logo.jpg"><b> Torual Qfb</b></a>
+                <img src="../logo.jpg"><b> Torual Qfb</b></a>
               <fieldset class="form-group text-white"> <label for="exampleInputEmail1">Nos convertimos en un aliado de negocio, apoyando a nuestros clientes en la continuidad de negocio, alineando los procesos de la infraestructura a través de las mejores prácticas.</label> </fieldset>
             </div>
             <div class="p-4 col-md-4">
@@ -258,7 +236,6 @@
         </div>
       </div>
     </footer>
-    <!-- piee de pagina-->
   </div>
   <!--contenedor-->
 </body>
